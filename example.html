@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blog - Example</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h3>Esmeraldo Blog</h3>
+
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Perfile</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Service</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="background">
+      <p>Lorem ipsum exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <i>new blog</i>
+      <button type="button">Comment</button>
+    </section>
+    <h1>Blog - Esmeraldo Manuel</h1>
+    <main>
+      <section class="content">
+        <article class="">
+          <img src="img/img (1).jpeg" alt="">
+          <h2>New article</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
+          <p>on march 1st, 2020</p>
+        </article>
+        <article class="">
+          <img src="img/img (1).png" alt="">
+          <h2>Recent article</h2>
+          <p>Lorem ipsum agna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
+          <p>on april 21st, 2020</p>
+        </article>
+        <article class="">
+          <img src="img/img (2).jpeg" alt="">
+          <h2>Old article</h2>
+          <p>Lorem ipsum agna ipsud minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
+          <p>on december 15st, 2020</p>
+        </article>
+        <article class="">
+          <img src="img/img (1).png" alt="">
+          <h2>Oldest article</h2>
+          <p>Lorem ipsum agna ipsum agna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
+          <p>on july 11st, 2020</p>
+        </article>
+      </section>
+
+      <aside class="aside">
+        <section class="perfile">
+          <h2>Perfile</h2>
+          <img src="img/img (2).jpeg" alt="">
+          <h3>Esmeraldo Manuel</h3>
+          <p>A front-end</p>
+          <p>A back-end</p>
+          <p>A great fullstack developer you have not heard about him.</p>
+        </section>
+        <h2>Services</h2>
+        <ul>
+          <li>To-do list app</li>
+          <li>Weather app</li>
+          <li>Task manager app</li>
+        </ul>
+        <h2>Contact</h2>
+        <address>Cellphone (example): +300 239-34-44-4444</address>
+        <address>E-mail: salazakoesmeraldokumanakoko@gmail.com</address>
+        <address>Location: Angola</address>
+      </aside>
+
+    </main>
+    <footer>
+      <nav>
+        <a href="https://m.facebook.com/EsmeraldoKoko/">Facebook</a>
+        <a href="https://https://esmeraldokoko.github.io/website/example2.html">Another website</a>
+        <a href="https://www.instagram.com/esmeraldokumana/reel/DNEn7BFAiEy/becoming-a-fullstack-developerprogramming/">Instagram</a>
+        <a href="https://www.tiktok.com/@esmeraldokoko">TikTok</a>
+      </nav>
+      <h3>&copy; Esmeraldo Blog is always reserved for you.</h3>
+    </footer>
+  </body>
+</html>
+<script>
+  const article = document.querySelectorAll('article');
+  const section = document.querySelectorAll('section');
+  const footer = document.querySelectorAll('footer');
+  const p = document.querySelectorAll('p');
+  const main = document.querySelectorAll('main');
+
+  const obs = new IntersectionObserver((esmer)=>{
+    esmer.forEach((older)=>{
+      if(older.isIntersecting){
+        older.target.classList.add('show')
+      }
+    })
+  })
+  article.forEach((item)=> obs.observe(item))
+  section.forEach((item)=> obs.observe(item))
+  footer.forEach((item)=> obs.observe(item))
+  p.forEach((item)=> obs.observe(item))
+  main.forEach((item)=> obs.observe(item))
+</script>
